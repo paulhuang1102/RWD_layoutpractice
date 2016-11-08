@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.header{
+	position: relative;
+	height: 110px;
+	border: 1px solid #F5F5F5;
+	border-left: none;
+	border-right: none;
+	box-shadow:0px 2px 1px -1px rgba(20%,20%,40%,0.5);
+}
+
+@media (max-width: 768px) {
+	.header{
+		height: auto;
+	}
+}
+
+.logo{
+	position: absolute;
+	top: 60px;
+	left: 30px;
+}
+
+.logo a{
+	width: 250px;
+	height: 40px;
+	display: block;
+	text-indent:-99999px;
+	background: url("../images/logo.png") no-repeat;
+}
+
+@media (max-width: 768px) {
+	.logo{
+		position: relative;
+		margin: 0 auto;
+		width: 250px;
+	}
+
+}
+
+.menu{
+	margin-top: 70px;
+	margin-right: 20px;
+	float: right; 
+}
+
+.menu li{
+	float: left;
+	margin-left: 20px;
+	text-align:center;
+}
+
+.menu li a{
+	color:#00DDAA;
+}
+
+@media (max-width: 768px) {
+	.menu{
+		float: none;
+	}
+	
+	.menu li{
+		width: 90%;
+		float: none;
+		margin: 0 auto 10px auto;
+	}
+
+	.menu li a{
+		width: 100%;
+		
+	}
+}
+
+.contact{
+	height: 30px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	background-color: #DDDDDD;
+}
+
+.contact ul{
+	float: right;
+}
+
+.contact li{
+	display: inline;
+	margin-left: 10px;
+	font-size: 15px;
+}
+
+.twitter a{
+	color:#99BBFF;
+}
+
+a {
+    text-decoration:none;
+    color: none;
+}
+
+.content{
+	width: 98%;
+	padding:40px 5px 10px 25px; 
+	float: left;
+}
+
+
+.content ul li{
+	margin-right: 20px;
+	float: left;
+	width:280px;
+	height: 380px;
+	padding: 10px 10px 10px 10px;
+	border: 1px solid #F5F5F5;
+	border-top: none;
+	border-radius: 5px;
+	box-shadow:0px 3px 2px -1px rgba(20%,20%,40%,0.5);
+}
+
+.content img{
+	padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+	.content{
+		padding: 40px 0 0 0;
+	}
+
+
+	.content ul li{
+		margin: auto;
+		float: none;
+		max-width: 100%;
+		
+	}
+}
